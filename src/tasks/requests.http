@@ -20,7 +20,7 @@ content-type: application/json
 }
 
 ### update task status
-PATCH http://localhost:3000/tasks/4b9da713-b1bf-4fc7-8268-7dd2f7c64ede/status
+PATCH http://localhost:3000/tasks/861bf115-35b5-4c0e-9f18-825b66046e32/status
 content-type: application/json
 
 {
@@ -29,4 +29,4 @@ content-type: application/json
 
 
 ### delete a task
-DELETE http://localhost:3000/tasks/36219e37-d358-41b8-919a-81c875744f20
+DELETE http://localhost:3000/tasks/5ef59417-6922-4e05-a49e-37dbeb64bf8f
