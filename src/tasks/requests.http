@@ -1,0 +1,32 @@
+
+### get all tasks
+GET http://localhost:3000/tasks
+
+### get tasks with filters
+GET http://localhost:3000/tasks?status=OPEN
+
+
+### get a task
+GET http://localhost:3000/tasks/2a1c7503-6d27-4dda-bb39-b5b0361654d7
+
+
+### create a new task
+POST http://localhost:3000/tasks
+content-type: application/json
+
+{
+ "title": "test task",
+ "description": "coucou"
+}
+
+### update task status
+PATCH http://localhost:3000/tasks/9748b150-b7ca-498b-b234-e2a229f78a17/status
+content-type: application/json
+
+{
+ "status": "IN_PROGRESS"
+}
+
+
+### delete a task
+DELETE http://localhost:3000/tasks/36219e37-d358-41b8-919a-81c875744f20
