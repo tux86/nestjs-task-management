@@ -20,7 +20,7 @@ content-type: application/json
 }
 
 ### update task status
-PATCH http://localhost:3000/tasks/9748b150-b7ca-498b-b234-e2a229f78a17/status
+PATCH http://localhost:3000/tasks/4b9da713-b1bf-4fc7-8268-7dd2f7c64ede/status
 content-type: application/json
 
 {
