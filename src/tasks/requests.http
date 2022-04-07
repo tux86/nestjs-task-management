@@ -1,7 +1,7 @@
 
 ### get all tasks
 GET http://localhost:3000/tasks
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNjQ5MzE3NzY0LCJleHAiOjE2NDkzMjEzNjR9.omSPOzfGxnL8IzGz_voBIYnctLUpaaV7AT1ihqF6FQY
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNjQ5MzM4MTU4LCJleHAiOjE2NDkzNDE3NTh9.jqOkkmy99ujmsgJB2NH92pYgq8qVkC0BxFb8-JJBpNo
 
 ### get tasks with filters
 GET http://localhost:3000/tasks?status=OPEN
@@ -14,6 +14,7 @@ GET http://localhost:3000/tasks/2a1c7503-6d27-4dda-bb39-b5b0361654d7
 ### create a new task
 POST http://localhost:3000/tasks
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNjQ5MzM4MTU4LCJleHAiOjE2NDkzNDE3NTh9.jqOkkmy99ujmsgJB2NH92pYgq8qVkC0BxFb8-JJBpNo
 
 {
  "title": "test task",
@@ -21,7 +22,8 @@ content-type: application/json
 }
 
 ### update task status
-PATCH http://localhost:3000/tasks/861bf115-35b5-4c0e-9f18-825b66046e32/status
+PATCH http://localhost:3000/tasks/6d1c07d4-c545-4e03-b00c-5576eed70f61/status
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNjQ5MzM4MTU4LCJleHAiOjE2NDkzNDE3NTh9.jqOkkmy99ujmsgJB2NH92pYgq8qVkC0BxFb8-JJBpNo
 content-type: application/json
 
 {
@@ -30,4 +32,5 @@ content-type: application/json
 
 
 ### delete a task
-DELETE http://localhost:3000/tasks/5ef59417-6922-4e05-a49e-37dbeb64bf8f
+DELETE http://localhost:3000/tasks/6d1c07d4-c545-4e03-b00c-5576eed70f61
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNjQ5MzM4MTU4LCJleHAiOjE2NDkzNDE3NTh9.jqOkkmy99ujmsgJB2NH92pYgq8qVkC0BxFb8-JJBpNo
